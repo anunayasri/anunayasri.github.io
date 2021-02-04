@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Feb 2021 19:42:36 GMT</lastBuildDate><item><title><![CDATA[Git Cheatsheet]]></title><description><![CDATA[Tips to enhance your Git workflow.]]></description><link>https://lumen.netlify.com/posts/git-cheatsheet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/git-cheatsheet</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;While writing software, Version Control is very important. Every software developer must learn to use version control. Git has become the default version control tool, and a software developer can’t skip learning this tool.  &lt;/p&gt;
+&lt;p&gt;This article is intended for readers who have just started using git. Hopefully this helps them in making the git journey more fun.&lt;/p&gt;
+&lt;p&gt;Mentioning common git commands and aliases below.&lt;/p&gt;
+&lt;h2 id=&quot;common-git-commands&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#common-git-commands&quot; aria-label=&quot;common git commands permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common Git Commands&lt;/h2&gt;
+&lt;h3 id=&quot;clone-a-repository&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#clone-a-repository&quot; aria-label=&quot;clone a repository permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Clone a repository&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git clone &amp;lt;repository_name&amp;gt; &amp;lt;destination_folder&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;if &lt;code class=&quot;language-text&quot;&gt;&amp;lt;destination_folder&amp;gt;&lt;/code&gt; is not given git creates a new folder with the name of the repo.&lt;/p&gt;
+&lt;p&gt;The following clones the &lt;a href=&quot;https://github.com/facebook/react&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;official React repo&lt;/a&gt;, into the a new folder react into your local machine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/5Sex4ntFGqjYT1NPTPyXuzQaZDJbdtqv&quot; alt=&quot;git-clone&quot;&gt;&lt;/p&gt;
+&lt;p&gt;And the following clone the React repo, in the folder called &lt;code class=&quot;language-text&quot;&gt;my-react&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/fcom9lpIihWQGhqpQKnWj1M7xl2myG7s&quot; alt=&quot;git-clone&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;to-start-a-new-git-tracked-repo&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-start-a-new-git-tracked-repo&quot; aria-label=&quot;to start a new git tracked repo permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To start a new git tracked repo&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;mkdir new-project
+﻿
+git init     # Makes the current directory a git tracked repo
+
+# Add files to the new-project
+# Its a good idea to add a &amp;#39;README.md&amp;#39; file and a &amp;#39;.gitignore&amp;#39; file and then make your first commit.
+﻿
+# Adds all the files in the current directory
+git add .
+﻿
+# Make your first commit and give a meaningful message
+git commit -m &amp;quot;Add README and gitignore&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;configure-your-git-installation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#configure-your-git-installation&quot; aria-label=&quot;configure your git installation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configure your git installation&lt;/h3&gt;
+&lt;p&gt;Add your username and email to git config so that git can add them in each that you make.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git config --global user.name &amp;quot;your_username&amp;quot;
+git config --global user.email your_email@example.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git shows the user details in logs etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/e93yMczUbrfxO8FpDy3lrCB10fU9n7Q8&quot; alt=&quot;git log&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;making-changes-in-your-local-and-push-it-to-remote-repo&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-changes-in-your-local-and-push-it-to-remote-repo&quot; aria-label=&quot;making changes in your local and push it to remote repo permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making changes in your local and push it to remote repo&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Make changes in the files
+
+# Check which files has changes
+git status&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/j4KZpA218BYXb88M4tJohFa1UNgZk4SN&quot; alt=&quot;git status&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Add changes to the staging area
+git add &amp;lt;file1&amp;gt; &amp;lt;file2&amp;gt;
+
+# Or to add all changes
+git add .
+
+# Files in the staging area are shown in green colour&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/Z1AqY60Cyj9ENZgXhxfn1DwaCZy1ukVu&quot; alt=&quot;git status&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt; # Commit the changes in the staging area
+git commit -m &amp;quot;A meaningful commit message&amp;quot;
+
+# push the changes in the remote repo
+git push origin &amp;lt;current_branch_name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;switch-between-branches&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#switch-between-branches&quot; aria-label=&quot;switch between branches permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Switch between branches&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git checkout &amp;lt;branch&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;merge-your-branch-in-master&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#merge-your-branch-in-master&quot; aria-label=&quot;merge your branch in master permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Merge your branch in master&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Switch to master branch
+git checkout master
+﻿
+git merge &amp;lt;your_branch&amp;gt;
+
+# Might have conflicts. Resolve conflicts and then continue merging.
+
+# Check logs to see if the changes have been incorporated
+git log
+
+# If everything looks fine, push to remote master
+git push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;determine-what-changes-you-have-made&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#determine-what-changes-you-have-made&quot; aria-label=&quot;determine what changes you have made permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Determine what changes you have made&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git diff &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/9UU5KQKtF8BQrQ7hP31BVFBU6FzJMcpY&quot; alt=&quot;git diff&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Additions and deletions are shown by + and - signs, and can be color-coded depending on the shell you use.&lt;/p&gt;
+&lt;h2 id=&quot;useful-aliases&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useful-aliases&quot; aria-label=&quot;useful aliases permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful Aliases&lt;/h2&gt;
+&lt;p&gt;Git is a very useful tool, something that developers use multiple times in a
+day. Typing git commands can be eased by using aliases to most common commands
+like &lt;code class=&quot;language-text&quot;&gt;git status&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Mentioning few useful aliases below. Include them in your &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt; file. Your
+configuration file may vary depending on your operating system and shell. If you
+are using Ubuntu or Mac OS X, &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt; is the file you need. If the file
+doesn’t exist, create the file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;g=git
+
+# Use: ga README.md .gitignore
+ga=&amp;#39;git add&amp;#39;
+
+# To add deleted files also
+gaa=&amp;#39;git add --all&amp;#39;
+
+# Use: gcmsg &amp;quot;Meaningful commit message&amp;quot;
+gcmsg=&amp;#39;git commit -m&amp;#39;
+
+# To switch to another branch
+# Use: gco master
+gco=&amp;#39;git checkout&amp;#39;
+
+# Use: gd &amp;lt;filename&amp;gt;
+gd=&amp;#39;git diff&amp;#39;
+
+# Get the list of branches, and you current branch
+gb=&amp;#39;git branch&amp;#39;
+
+# Use: gc -m &amp;quot;A meaningful message&amp;quot;
+gc=&amp;#39;git commit -v&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Function to get the current branch name.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;function git_current_branch() {  
+    local ref  
+    ref=$(command git symbolic-ref --quiet HEAD 2&amp;gt; /dev/null)  
+    local ret=$?  
+    if [[ $ret != 0 ]]; then 
+        [[ $ret == 128 ]] &amp;amp;&amp;amp; return  # no git repo.  
+        ref=$(command git rev-parse --short HEAD 2&amp;gt; /dev/null) || return  
+    fi
+    echo ${ref#refs/heads/}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aliases for &lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt;. These save typing a lot of characters, and possible typos. Very useful!&lt;/p&gt;
+&lt;p&gt;Pull your current branch to remote.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Use:
+# git checkout &amp;lt;your_branch&amp;gt;
+# ggpull  # Get the latest changes from remote
+
+ggpull=&amp;#39;git pull origin $(git_current_branch)&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Push your current branch to remote. A new branch in remote is created, if already not present.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Use: After making commits to your current branch
+# ggpush
+
+ggpush=&amp;#39;git push origin $(git_current_branch)&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hope this cheatsheet makes your git journey easier.&lt;/p&gt;
+&lt;p&gt;Happy coding! 😊&lt;/p&gt;</content:encoded></item></channel></rss>

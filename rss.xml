@@ -1,4 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Feb 2021 19:42:36 GMT</lastBuildDate><item><title><![CDATA[Git Cheatsheet]]></title><description><![CDATA[Tips to enhance your Git workflow.]]></description><link>https://lumen.netlify.com/posts/git-cheatsheet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/git-cheatsheet</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;While writing software, Version Control is very important. Every software developer must learn to use version control. Git has become the default version control tool, and a software developer can’t skip learning this tool.  &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Feb 2021 10:29:08 GMT</lastBuildDate><item><title><![CDATA[HTTP - The backbone of Internet]]></title><description><![CDATA[Layman explanation of what HTTP is.]]></description><link>https://lumen.netlify.com/posts/http-the-backbone-of-internet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/http-the-backbone-of-internet</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The internet(or World Wide Web) is now an inseparable part of our lives. We
+can’t imagine our lives without the ease and information the internet provides
+us. Services like Google Search, WhatsApp, Facebook, Internet Banking, Online
+Reservations etc have transformed our lives. It goes without saying that there
+is great business opportunity for companies and people making online
+applications. &lt;/p&gt;
+&lt;p&gt;Those who are in the business of building online applications/services, or
+intend to join such as business should have an understanding of the units that
+forms the internet as we know it today. Hence, I present you this article that
+talks about a technology called HTTP that is one of the building blocks of
+internet.&lt;/p&gt;
+&lt;h2 id=&quot;what-the-hell-is-http&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-the-hell-is-http&quot; aria-label=&quot;what the hell is http permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What the hell is HTTP?&lt;/h2&gt;
+&lt;p&gt;If you are viewing photos on Instagram, or watching videos on Youtube or
+reading this article Quepinch, the content in all these cases is stored in a
+computer (that is far away, may be in another country). That content has to be
+transferred from the remote computers to your mobile or laptop. There are
+millions and billions of users consuming information on their computers. To
+reliably serve so many consumers there is need of certain rules(also called
+‘protocols’) to transfer the data from the storage computers to the consumers.
+&lt;em&gt;HTTP&lt;/em&gt; is one of those rules. And it is a very important rule. Almost everything
+&lt;a href=&quot;that&quot;&gt;that&lt;/a&gt; you see in our web browser or mobile uses HTTP!&lt;/p&gt;
+&lt;p&gt;HTTP is an acronym that stands for &lt;em&gt;&lt;em&gt;H&lt;/em&gt;yper&lt;em&gt;T&lt;/em&gt;ext &lt;em&gt;T&lt;/em&gt;ransfer &lt;em&gt;P&lt;/em&gt;rotocol&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;HTTP is a set of rules that specifies how two computers can talk to each other
+over the internet.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;who-made-http-and-where-is-it-written-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#who-made-http-and-where-is-it-written-&quot; aria-label=&quot;who made http and where is it written  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Who made HTTP and where is it written ?&lt;/h2&gt;
+&lt;p&gt;The first version of HTTP is called &lt;em&gt;HTTP 0.9&lt;/em&gt; and was developed by &lt;a href=&quot;https://en.wikipedia.org/wiki/Tim_Berners-Lee&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Tim
+Berners-Lee&lt;/a&gt; in 1989. &lt;/p&gt;
+&lt;p&gt;&lt;img width=&quot;200&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/XAdOpEwgnPiHryCJ1hcUBYjTCfXcebP6&quot; style=&quot;display: block; margin-left:auto; margin-right:auto&quot;&gt;&lt;/p&gt;
+&lt;p&gt;(Image Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Tim_Berners-Lee&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Wikipedia&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Tim is an engineer and computer scientist. He is best known as the inventor of
+World Wide Web.&lt;/p&gt;
+&lt;p&gt;The HTTP protocol documentation is maintained by &lt;a href=&quot;https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;IETF(Internet Engineering
+Task Force)&lt;/a&gt;
+which is an organisation that helps develop and promote internet standards such
+as the HTTP protocol.&lt;/p&gt;
+&lt;p&gt;The exact definition of the protocol is written in a text document known as
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Request_for_Comments&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Request for
+Comments(RFC)&lt;/a&gt;, which is a
+common way specifying specifications in the technical community. &lt;/p&gt;
+&lt;p&gt;Any protocol, in fact anything, can’t be developed without imperfections in the
+first shot. Hence, multiple versions needs to be developed, where each version
+is better than the previous one. HTTP also has multiple versions. &lt;em&gt;The most
+commonly used version is HTTP 1.1.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The latest version for HTTP 1.1 is mention in &lt;a href=&quot;https://tools.ietf.org/html/rfc7230&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;RFC 7230&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;if-i-want-to-learn-developing-online-apps-do-i-need-to-know-everything-http-documentation-says&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#if-i-want-to-learn-developing-online-apps-do-i-need-to-know-everything-http-documentation-says&quot; aria-label=&quot;if i want to learn developing online apps do i need to know everything http documentation says permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;If I want to learn developing online apps, do I need to know everything HTTP documentation says?&lt;/h2&gt;
+&lt;p&gt;Fortunately no. &lt;/p&gt;
+&lt;p&gt;The exact rules are implemented by the browser. Each browser is developed and
+enhanced by their respective team of developers. The team should ensure that
+their browser software is up to date with the HTTP protocols and the continuous
+enhancements being made in it.&lt;/p&gt;
+&lt;p&gt;As a software developer, one must know the basics of HTTP i.e. the principles
+on which it is designed. This helps to understand how the browser will behave
+in different situations. What different cases you can encounter while writing
+your web application.&lt;/p&gt;
+&lt;p&gt;Another post HTTP basics coming soon!&lt;/p&gt;
+&lt;h2 id=&quot;but-i-have-also-heard-about-https-is-it-the-plural-of-http&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#but-i-have-also-heard-about-https-is-it-the-plural-of-http&quot; aria-label=&quot;but i have also heard about https is it the plural of http permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;But, I have also heard about HTTPS. Is it the plural of HTTP?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;HTTPS&lt;/em&gt; is another protocol. &lt;em&gt;HTTPS&lt;/em&gt; stands for &lt;em&gt;HTTP Secure&lt;/em&gt; which, as the name
+suggests, is HTTP with enhanced security. HTTPS ensures that the data that is
+being transferred from one computer to another is *encrypted so that bad guys
+can’t read your data.&lt;/p&gt;
+&lt;p&gt;*&lt;strong&gt;Encryption&lt;/strong&gt; is the process of transforming data into some garbage values so
+that people can’t make sense from it. The sender computer encrypts and sends
+the data to the receiver, and only the receiver has the knowledge to transform
+the data into its original form. Hence, even if a third person possesses the
+encrypted data, he/she can’t understand it.&lt;/p&gt;
+&lt;p&gt;Without HTTPS services like internet banking, chatting applications(like
+WhatsApp), Instagram etc. can’t function!&lt;/p&gt;
+&lt;p&gt;HTTPS is mandatory for online security. You must not trust websites that do not
+operate on HTTPS. Anyone can read your data in non HTTPS websites.&lt;/p&gt;
+&lt;p&gt;Browser can show visual signs about a &lt;em&gt;secured site&lt;/em&gt; running on HTTPS vs an
+unsecured site running on plain HTTP. The following images are from Chrome
+browser.&lt;/p&gt;
+&lt;p&gt;&lt;img width=&quot;50%&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/fJIjCHnT1gqFZzmFakAL8vVe6T7aLmzR&quot; style=&quot;display: block; margin-left:auto; margin-right:auto&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img width=&quot;50%&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/tyVY1iSmOUxGSAIuk6VECLtdZV7y3ceR&quot; style=&quot;display: block; margin-left:auto; margin-right:auto&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;Image&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[How to choose your First Programming Language]]></title><description><![CDATA[The articles helps to decide your first programming language.]]></description><link>https://lumen.netlify.com/posts/how-to-choose-your-first-programming-language</link><guid isPermaLink="false">https://lumen.netlify.com/posts/how-to-choose-your-first-programming-language</guid><pubDate>Sat, 02 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;You first programming language can make or break your interest in the
+wonderful world of programming and building cool stuff.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let me summarise this long story for you -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Programming language doesn’t make you a better developer; building a solid foundation of software engineering principles does. So, don’t go on searching for the best programming language.&lt;/li&gt;
+&lt;li&gt;Choose a language that has good online support.&lt;/li&gt;
+&lt;li&gt;Choose a language that is not scary and easy to write code in. &lt;/li&gt;
+&lt;li&gt;My personal preference is &lt;code class=&quot;language-text&quot;&gt;python&lt;/code&gt;. Although, javascript is also a good option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Since you have come so far, I know that you have the patience and the interest
+to read the entire story. I tried my best to shorten the story, but the I needed
+to convince you of a very important step - choosing your first programming
+language.&lt;/p&gt;
+&lt;p&gt;People who want to start writing code, or students who want to build their
+career as software developers often think which programming language they should
+start with. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some want to choose the best programming language. &lt;/li&gt;
+&lt;li&gt;Some want a language that is famous in the industry and can help them get good jobs.&lt;/li&gt;
+&lt;li&gt;Some want to learn the newest language in the market. It must be better than the old ones.&lt;/li&gt;
+&lt;li&gt;Some go after building apps, and think they will learn the language on the way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Programming language is a tool. It doesn’t make you a better developer, and
+will not give you better credibility.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So….. which language should you start with ???&lt;/p&gt;
+&lt;p&gt;That depends on what you want to achieve after learning the language.&lt;/p&gt;
+&lt;p&gt;Yes. It’s as simple as that.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to build an Android app learn Kotlin or Java.&lt;/li&gt;
+&lt;li&gt;If you want to build an iOS app learn Swift.&lt;/li&gt;
+&lt;li&gt;If you want to build beautiful web pages learn HTML, CSS and Javascript.&lt;/li&gt;
+&lt;li&gt;If you are a student and want good grades in your language course, learn whatever the professor is teaching you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;BUT … if you want to build a good career as a software engineer …&lt;/p&gt;
+&lt;p&gt;DO NOT go after searching for the best programming languages, learn how to build
+logical solutions to a problem.&lt;/p&gt;
+&lt;p&gt;What do I mean by that?&lt;/p&gt;
+&lt;p&gt;Programming languages are just tools that help humans ask computers to do stuff
+for them. Each programming language just makes it easier to do a certain kind of
+job or in some cases it is the only tool we can choose.&lt;/p&gt;
+&lt;p&gt;For example, the browser(Chrome, Firefox etc.) understands only HTML, CSS and
+Javascript. You can’t write a program in C++ or Java that has to be executed on
+the browser. An Android application needs to be written in Kotlin or Java only.&lt;/p&gt;
+&lt;p&gt;Software developers are paid to build solutions to problems. To build efficient
+and stable solutions, one would eventually have to work on multiple languages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The real deal lies in using the best tool to solve the problem at hand.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tools(language or frameworks) that you will use to build a chat application(like WhatsApp) will be completely different from the tools to be used to build a photo sharing site like Instagram.&lt;/p&gt;
+&lt;p&gt;Every programming language(or framework) has its strengths and weaknesses. They must be chosen based on the end result needed.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The real question is - What knowledge should I have to easily switch between
+multiple languages or frameworks.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Every language has more or less similar constructs and tools to get things done. Some common constructs are -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Variables&lt;/li&gt;
+&lt;li&gt;Arithmetic operations - addition, subtraction, multiplication, division etc.&lt;/li&gt;
+&lt;li&gt;Conditional statements - If a condition is true perform some action.&lt;/li&gt;
+&lt;li&gt;Looping constructs - Repeat a task certain number of times.&lt;/li&gt;
+&lt;li&gt;Object Oriented Programming - A certain pattern of writing code&lt;/li&gt;
+&lt;li&gt;Functional Programming - Another pattern of writing code&lt;/li&gt;
+&lt;li&gt;Error handling&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Understand these basics. Learn where and how to use them. If you are comfortable
+using these patterns in one language, you can use them in other languages also.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learn one language first. Learn it well. Be very comfortable in that language.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You don’t want to be this guy  -&lt;/p&gt;
+&lt;img width=&quot;400&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/IkJbqBowiMTx5K7gp1gUbkAOMseLi019&quot;&gt;
+&lt;p&gt;&lt;em&gt;(Source: &lt;a href=&quot;http://geek-and-poke.com/geekandpoke/2009/7/25/the-art-of-programming-part-2.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://geek-and-poke.com/geekandpoke/2009/7/25/the-art-of-programming-part-2.html&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Coming to the million dollar question of What Should My First Programming Language?&lt;/p&gt;
+&lt;p&gt;Your first programming language show should be -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Should be simple to write in, so that you can concentrate on the solution rather than the language syntax.&lt;/li&gt;
+&lt;li&gt;Should be easier to find help on the internet. Common problems have been addressed in online forums like StackOverflow etc.&lt;/li&gt;
+&lt;li&gt;Should have an ecosystem of stable libraries for common tasks like building web services, parsing files of common formats(json etc.).&lt;/li&gt;
+&lt;li&gt;Better if it is popular in the software industry. Eg. a language called ‘Javascript’ is very famous, but a language like ‘Lisp’ is not so famous. Working on an industry famous language adds weight to your resume.&lt;/li&gt;
+&lt;li&gt;Since, it is very common for developers to work on web services. Your first language should have a good support building web applications.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;I would recommend to choose amongst following two languages that satisfy the
+above criteria -&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; &lt;img width=&quot;200&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/8r2wVkA4W3qIUR4FGDe3Tr5dZI97zbrw&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Javascript&lt;/strong&gt; &lt;img width=&quot;80&quot; src=&quot;https://s3.ap-south-1.amazonaws.com/prd-hc-oj-public-1/public/users/73794b05-fe63-4188-81cd-b6fd35c7aa4e/images/szKckFUtCsH2kWNTHSIQkJJQXVDPxTyA&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Both are pretty easy to learn and write code in. &lt;/li&gt;
+&lt;li&gt;Both have very good online support i.e. you can find answers to almost all the problems you will face while working in them.&lt;/li&gt;
+&lt;li&gt;Both have a stable ecosystem of libraries. This is very important for any language.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Python and Javascript both do not scare beginner developers.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Git Cheatsheet]]></title><description><![CDATA[Tips to enhance your Git workflow.]]></description><link>https://lumen.netlify.com/posts/git-cheatsheet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/git-cheatsheet</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;While writing software, Version Control is very important. Every software developer must learn to use version control. Git has become the default version control tool, and a software developer can’t skip learning this tool.  &lt;/p&gt;
 &lt;p&gt;This article is intended for readers who have just started using git. Hopefully this helps them in making the git journey more fun.&lt;/p&gt;
 &lt;p&gt;Mentioning common git commands and aliases below.&lt;/p&gt;
 &lt;h2 id=&quot;common-git-commands&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#common-git-commands&quot; aria-label=&quot;common git commands permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common Git Commands&lt;/h2&gt;

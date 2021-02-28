@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Feb 2021 10:42:18 GMT</lastBuildDate><item><title><![CDATA[HTTP - The backbone of Internet]]></title><description><![CDATA[Layman explanation of what HTTP is.]]></description><link>https://lumen.netlify.com/posts/http-the-backbone-of-internet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/http-the-backbone-of-internet</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The internet(or World Wide Web) is now an inseparable part of our lives. We
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Feb 2021 15:49:12 GMT</lastBuildDate><item><title><![CDATA[Vim Emergency]]></title><description><![CDATA[I have no use Vim. But I have no idea how to even start typing. Help me!]]></description><link>https://lumen.netlify.com/posts/vim-emergency</link><guid isPermaLink="false">https://lumen.netlify.com/posts/vim-emergency</guid><pubDate>Sat, 27 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Our friend Susan is debugging a &lt;em&gt;production&lt;/em&gt; issue. She figured out that a
+configuration file on the production needs to be updated. Her manager asked
+said, “Susan, this is a piece of cake! You can find the file in &lt;code class=&quot;language-text&quot;&gt;/etc/&lt;/code&gt;“.&lt;/p&gt;
+&lt;p&gt;Susan ssh’d into the server. She knew that a file can be read in vim, and she
+opens the file in vim. &lt;em&gt;OMG! She is trying to edit the text but nothing is
+happening! What is going on&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Susan has no time for long tutorials. She needs something crip and to the point.
+If you are Susan read on …&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Our friend Susan needs to fix a production issue by updating a configuration
+file on the production server.&lt;/p&gt;
+&lt;p&gt;She ssh’d into the server.&lt;br&gt;
+She needs to edit the file and VIM is the only editor available.&lt;br&gt;
+She has no clue how to edit text in vim.  &lt;/p&gt;
+&lt;p&gt;If you are Susan, read on …&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First of all, vim is a terminal application which means the mouse won’t work.
+&lt;em&gt;You need to use the keyboard to move around.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Vim has a writing mode and a ‘not writing mode’(called ‘normal mode’).
+Vim starts in normal mode, hence typing letters will not work.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Use arrow keys&lt;/em&gt; to move left, right, up and down in the file.(Simple
+navigation keys are mentioned in the &lt;a href=&quot;#moving-in-the-file&quot;&gt;next section&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;To start &lt;em&gt;inserting&lt;/em&gt; text type &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When you are done, press &lt;code class=&quot;language-text&quot;&gt;&amp;lt;ESC&amp;gt;&lt;/code&gt; to stop inserting text and go back to normal
+mode.&lt;/li&gt;
+&lt;li&gt;To save the file, hit &lt;code class=&quot;language-text&quot;&gt;&amp;lt;ESC&amp;gt;&lt;/code&gt; then type &lt;code class=&quot;language-text&quot;&gt;:write&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;To quit the file, hit &lt;code class=&quot;language-text&quot;&gt;&amp;lt;ESC&amp;gt;&lt;/code&gt; then type &lt;code class=&quot;language-text&quot;&gt;:quit&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If you think you messed up and want to &lt;em&gt;exit without saving&lt;/em&gt; the file - &lt;code class=&quot;language-text&quot;&gt;:quit!&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;moving-in-the-file&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#moving-in-the-file&quot; aria-label=&quot;moving in the file permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Moving in the file&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;gg&lt;/code&gt;: Go to the first line.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;G&lt;/code&gt;(Uppercase g): Go to the last line.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl+u&lt;/code&gt;: Page up&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl_d&lt;/code&gt;: Page down&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[HTTP - The backbone of Internet]]></title><description><![CDATA[Layman explanation of what HTTP is.]]></description><link>https://lumen.netlify.com/posts/http-the-backbone-of-internet</link><guid isPermaLink="false">https://lumen.netlify.com/posts/http-the-backbone-of-internet</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The internet(or World Wide Web) is now an inseparable part of our lives. We
 can’t imagine our lives without the ease and information the internet provides
 us. Services like Google Search, WhatsApp, Facebook, Internet Banking, Online
 Reservations etc have transformed our lives. It goes without saying that there

@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Feb 2021 15:49:12 GMT</lastBuildDate><item><title><![CDATA[Vim Emergency]]></title><description><![CDATA[I have no use Vim. But I have no idea how to even start typing. Help me!]]></description><link>https://lumen.netlify.com/posts/vim-emergency</link><guid isPermaLink="false">https://lumen.netlify.com/posts/vim-emergency</guid><pubDate>Sat, 27 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Our friend Susan is debugging a &lt;em&gt;production&lt;/em&gt; issue. She figured out that a
-configuration file on the production needs to be updated. Her manager asked
-said, “Susan, this is a piece of cake! You can find the file in &lt;code class=&quot;language-text&quot;&gt;/etc/&lt;/code&gt;“.&lt;/p&gt;
-&lt;p&gt;Susan ssh’d into the server. She knew that a file can be read in vim, and she
-opens the file in vim. &lt;em&gt;OMG! She is trying to edit the text but nothing is
-happening! What is going on&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Susan has no time for long tutorials. She needs something crip and to the point.
-If you are Susan read on …&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Our friend Susan needs to fix a production issue by updating a configuration
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Anunaya Srivastava]]></title><description><![CDATA[Blog by Anunaya Srivastava]]></description><link>https://lumen.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Feb 2021 15:58:37 GMT</lastBuildDate><item><title><![CDATA[Vim Emergency]]></title><description><![CDATA[I have no use Vim. But I have no idea how to even start typing. Help me!]]></description><link>https://lumen.netlify.com/posts/vim-emergency</link><guid isPermaLink="false">https://lumen.netlify.com/posts/vim-emergency</guid><pubDate>Sat, 27 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Our friend Susan needs to fix a production issue by updating a configuration
 file on the production server.&lt;/p&gt;
 &lt;p&gt;She ssh’d into the server.&lt;br&gt;
 She needs to edit the file and VIM is the only editor available.&lt;br&gt;
